@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #slider-container {
+            position: relative;
+            width: 500px;
+            margin: auto;
+        }
+        #slider {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        .nav-button {
+            margin: 10px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Slider</h1>
+    <div id="slider-container">
+        <img id="slider" src="" alt="Image Slider">
+    </div>
+    <button class="nav-button" onclick="prevImage()">Previous</button>
+    <button class="nav-button" onclick="nextImage()">Next</button>
+    <script src="./imageslider.js"></script>
+</body>
+</html>
